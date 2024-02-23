@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+android:layout_margin="2dp"
+app:cardCornerRadius="10dp"
+android:elevation="5dp"
+xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="match_parent"
+                android:id="@+id/img"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="150dp"
+                android:src="@drawable/ebook_pdf">
+            </ImageView>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginRight="50dp"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/title_tv"
+                        android:layout_width="wrap_content"
+                        android:text="IBPS - Exam Test paper "
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:textSize="14dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_height="match_parent">
+
+                    </TextView>
+                    <TextView
+                        android:id="@+id/des_tv"
+                        android:layout_width="wrap_content"
+                        android:text="Uploaded on 12/05/2022"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:textSize="12dp"
+                        android:layout_height="match_parent">
+
+                    </TextView>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/download_rl"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/circle"
+                    android:layout_width="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="40dp">
+                    <ImageView
+                        android:layout_centerInParent="true"
+                        android:layout_width="25dp"
+                        android:tint="@color/white"
+                        android:src="@drawable/download"
+                        android:layout_height="25dp">
+                    </ImageView>
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>

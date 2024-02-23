@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="10dp"
+        android:layout_margin="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/ll"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginTop="10dp"
+
+                    android:id="@+id/tvcount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:lineSpacingExtra="1dp" />
+                <TextView
+                    android:layout_marginTop="10dp"
+
+                    android:id="@+id/tvQuestion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hindi"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:lineSpacingExtra="1dp" />
+
+            </LinearLayout>
+
+            <RadioGroup
+                android:layout_below="@+id/ll"
+                android:id="@+id/radiofourr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:checked="false"
+                    android:id="@+id/radioone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="top"
+                    android:paddingTop="6dp"
+                    android:text=" two" />
+
+                <RadioButton
+                    android:layout_below="@+id/radioone"
+                    android:checked="false"
+                    android:id="@+id/radiotwo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" two"
+                    android:gravity="top"
+                    android:layout_marginTop="-6dp"
+                    android:paddingTop="6dp"
+
+
+                    />
+
+                <RadioButton
+                    android:id="@+id/radiothree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" three"
+                    android:layout_marginTop="-6dp"
+                    android:paddingTop="6dp"
+                    android:layout_below="@+id/radiotwo"
+                    android:checked="false"
+
+                    android:gravity="top"
+
+                    />
+
+                <RadioButton
+                    android:layout_below="@+id/radiothree"
+                    android:checked="false"
+
+                    android:id="@+id/radiofour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" four"
+                    android:gravity="top"
+                    android:paddingTop="6dp"
+                    android:layout_marginTop="-6dp"
+
+
+                    />
+
+            </RadioGroup>
+
+
+            <RelativeLayout
+                android:id="@+id/rll"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/radiofourr">
+
+                <TextView
+                    android:id="@+id/tvMy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="My Answer"
+                    android:textColor="@color/red"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:lineSpacingExtra="1dp" />
+
+                <TextView
+                    android:id="@+id/tvMyAnswer"
+                    android:layout_toRightOf="@+id/tvMy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="right"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:layout_marginLeft="20dp"
+                    android:lineSpacingExtra="1dp" />
+
+
+                <TextView
+                    android:layout_below="@+id/tvMyAnswer"
+                    android:id="@+id/tvCorrect2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Correct Answer"
+                    android:textColor="@color/red"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:lineSpacingExtra="1dp" />
+
+                <TextView
+                    android:id="@+id/tvCorrect3"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvMyAnswer"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/tvCorrect2"
+                    android:lineSpacingExtra="1dp"
+                    android:text="worng"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".Basic.Teacher.TeacherClassHistory">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/toolbar_main"
+        android:layout_gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/purple_500">
+        <ImageView
+            android:id="@+id/back_img"
+            android:layout_width="50dp"
+            android:layout_gravity="center_vertical"
+            android:padding="15dp"
+            android:tint="@color/white"
+            android:layout_height="50dp"
+            android:src="@drawable/back"
+            android:gravity="center" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:textColor="@color/loginBkColor"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:text="Classes Report"/>
+
+    </LinearLayout>
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/srl_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/cust_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:elevation="20dp"
+        android:visibility="gone"
+        app:cardCornerRadius="5dp"
+        android:layout_margin="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/rlLftRooms"
+                android:layout_width="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginRight="70dp"
+                    android:text="Mathmatices Class-1"
+                    android:textSize="16dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:id="@+id/name_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_alignParentRight="true"
+                    android:text="10-06-2022"
+                    android:textSize="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/rlLOcation"
+                android:layout_below="@+id/rlLftRooms"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/ivLocation"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/ic_dob" />
+                <TextView
+                    android:id="@+id/tvLocation"
+                    android:layout_toRightOf="@+id/ivLocation"
+                    android:text="    Start Time 12:00 PM"
+                    android:textSize="12dp"
+                    android:textStyle="normal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/rlvNear"
+                android:layout_below="@+id/rlLOcation"
+                android:layout_width="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp">
+
+                <ImageView
+                    android:id="@+id/ivNear"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:background="@drawable/ic_dob" />
+
+                <TextView
+                    android:id="@+id/tvNear"
+                    android:layout_toRightOf="@+id/ivNear"
+                    android:text="     End Time 2:00 PM"
+                    android:textSize="12dp"
+                    android:textStyle="normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlCancelation"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/ivCheckPay"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/download"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp" />
+
+                <TextView
+                    android:layout_toRightOf="@+id/ivCheckPay"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="8dp"
+                    android:id="@+id/tvPay"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:text="Total 2 hours Class"
+                    android:textSize="12dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_height="wrap_content" />
+
+
+                <ImageView
+                    android:layout_below="@+id/tvPay"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/ivCheckCouple"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/ic_baseline_account_circle_24"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp" />
+
+                <TextView
+                    android:layout_below="@+id/tvPay"
+                    android:layout_toRightOf="@+id/ivCheckCouple"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="7dp"
+                    android:id="@+id/tvCheckCouple"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:text="Mode-Online"
+                    android:textSize="12dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center"
+                    android:textColor="#278E2B"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:padding="5dp"
+                    android:background="@drawable/rect_box"
+                    android:id="@+id/tvFinalPrice"
+                    android:layout_width="wrap_content"
+                    android:text="Completed"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:elevation="20dp"
+        android:visibility="gone"
+        app:cardCornerRadius="5dp"
+        android:layout_margin="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content">
+                <TextView                     android:layout_marginRight="70dp"
+
+                    android:text="Social Science"
+                    android:textSize="16dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_alignParentRight="true"
+                    android:text="12-06-2022"
+                    android:textSize="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/ic_dob" />
+                <TextView
+                    android:text="    Start Time 10:00 PM"
+                    android:textSize="12dp"
+                    android:textStyle="normal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp">
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:background="@drawable/ic_dob" />
+                <TextView
+                    android:text="     End Time *****"
+                    android:textSize="12dp"
+                    android:textStyle="normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/ivCheckPay1"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/download"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp" />
+
+                <TextView
+                    android:layout_toRightOf="@+id/ivCheckPay1"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="8dp"
+                    android:id="@+id/tvPay1"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:text="Total ** hours Class"
+                    android:textSize="12dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_height="wrap_content" />
+
+
+                <ImageView
+                    android:layout_below="@+id/tvPay1"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/ivCheckCouple1"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/ic_baseline_account_circle_24"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp" />
+
+                <TextView
+                    android:layout_below="@+id/tvPay1"
+                    android:layout_toRightOf="@+id/ivCheckCouple1"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="7dp"
+                    android:id="@+id/tvCheckCouple1"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:text="Mode-Online"
+                    android:textSize="12dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center"
+                    android:textColor="#F44336"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:padding="5dp"
+                    android:background="@drawable/rect_box"
+                    android:id="@+id/running_tv"
+                    android:layout_width="wrap_content"
+                    android:text="Running"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</LinearLayout>

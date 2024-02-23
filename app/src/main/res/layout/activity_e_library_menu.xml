@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Basic.slidingmenu.ELibraryMenu">
+    <androidx.cardview.widget.CardView
+        app:cardElevation="20dp"
+        android:id="@+id/rlHeader"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/purple_500"
+            android:layout_height="50dp">
+            <ImageView
+                android:id="@+id/sliding_menu"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="15dp"
+                android:tint="@color/white"
+                android:layout_centerVertical="true"
+                android:src="@drawable/back" />
+            <TextView
+                android:text="Book List"
+                android:layout_centerInParent="true"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:textStyle="bold"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/wallet_histroy2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </androidx.recyclerview.widget.RecyclerView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="No Record Found!"
+            android:textColor="@color/grey"
+            android:layout_margin="20dp"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/wallet_histroy1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </RelativeLayout>
+</LinearLayout>

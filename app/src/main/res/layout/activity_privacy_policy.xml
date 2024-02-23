@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.cardview.widget.CardView
+        app:cardElevation="20dp"
+        android:id="@+id/rlHeader"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/purple_500"
+            android:layout_height="50dp">
+            <ImageView
+                android:id="@+id/sliding_menu"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="15dp"
+                android:tint="@color/white"
+                android:layout_centerVertical="true"
+                android:src="@drawable/back" />
+            <TextView
+                android:text="Privacy Policy"
+                android:layout_centerInParent="true"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <WebView
+        android:layout_below="@+id/rlHeader"
+        android:id="@+id/activity_main_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+<!--
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_below="@+id/rlHeader"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/header_title"
+                android:text="Frequently Ask Questions(FAQ's)"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/black"
+                android:layout_height="0.1dp">
+            </View>
+            <include
+                layout="@layout/dynamic_privacypolicy"></include>
+            <include
+                layout="@layout/dynamic_privacypolicy"></include>
+
+            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                android:id="@+id/srl_refresh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/cust_recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="visible" />
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+        </LinearLayout>
+    </ScrollView>
+-->
+
+
+</RelativeLayout>

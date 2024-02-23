@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:orientation="horizontal"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="5dp"
+    android:layout_margin="1dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="120dp"
+                android:layout_height="120dp">
+
+                <ImageView
+                    android:id="@+id/thumbnali_img"
+                    android:layout_width="120dp"
+                    android:tint="@color/white"
+                    android:alpha="0.8"
+                    android:layout_height="120dp"
+                    android:background="@drawable/dasone">
+                </ImageView>
+
+                <ImageView
+                    android:visibility="gone"
+                    android:id="@+id/paid_img"
+                    android:layout_width="35dp"
+                    android:src="@drawable/freeimg"
+                    android:layout_height="35dp">
+                </ImageView>
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:src="@drawable/play"
+                    android:padding="5dp"
+                    android:tint="@color/white"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/circle"
+                    android:layout_height="35dp">
+
+                </ImageView>
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_marginLeft="120dp"
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/title_tv"
+                    android:layout_width="wrap_content"
+                    android:text="Android development (JAVA|XML)"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+                <TextView
+                    android:id="@+id/date_tv"
+                    android:layout_width="wrap_content"
+                    android:text="Uploaded on :- 14-06-2022"
+                    android:gravity="bottom"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="12dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="match_parent">
+
+                </TextView>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+

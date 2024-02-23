@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.firebase:firebase-invites:11.0.4@aar">
+    <CLASSES>
+      <root url="jar://C:/Program Files/Java/jdk-18.0.2/bin/caches/transforms-3/1e4e081e208d1763ec666289970f65e9/transformed/jetified-firebase-invites-11.0.4/jars/classes.jar!/" />
+      <root url="file://C:/Program Files/Java/jdk-18.0.2/bin/caches/transforms-3/1e4e081e208d1763ec666289970f65e9/transformed/jetified-firebase-invites-11.0.4/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

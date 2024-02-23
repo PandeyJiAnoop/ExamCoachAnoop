@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="5dp"
+    android:layout_margin="1dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_horizontal"
+        android:clickable="true"
+
+        android:orientation="vertical"
+        android:text="Tile2"
+        android:visibility="visible">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/cat_img"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:padding="15dp"
+            app:civ_border_width="2dp"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ias" />
+        <TextView
+            android:id="@+id/cat_name"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:background="@drawable/shape_rect"
+            android:text="UPSC IAS"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"
+            android:textSize="12dp"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

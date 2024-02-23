@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/splashback"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="left"
+        android:src="@drawable/logoicon"/>
+    <ImageView
+        android:layout_below="@+id/imageView2"
+        android:id="@+id/imageView1"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:tint="@color/purple_500"
+        android:layout_gravity="left"
+        android:src="@drawable/logoname"/>
+    <com.daimajia.numberprogressbar.NumberProgressBar
+        android:id="@+id/npb_progress"
+        android:layout_below="@+id/imageView1"
+        style="@style/NumberProgressBar_Default"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="200dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="15dp"
+        app:progress_current="0"
+        app:progress_max="100"
+        app:progress_text_color="@color/red"
+        app:progress_text_visibility="visible" />
+
+<!--    <ProgressBar-->
+<!--        android:layout_below="@+id/imageView1"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:background = "@xml/progress"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_height="wrap_content">-->
+<!--    </ProgressBar>-->
+</RelativeLayout>

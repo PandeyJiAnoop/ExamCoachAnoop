@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_marginBottom="60dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/top_rl"
+                android:layout_width="match_parent"
+                android:background="@color/colorAccent"
+                android:layout_height="50dp">
+                <ImageView
+                    android:id="@+id/back_img"
+                    android:layout_width="50dp"
+                    android:padding="15dp"
+                    android:tint="@color/white"
+                    android:src="@drawable/back"
+                    android:layout_height="50dp">
+                </ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Doubts"
+                    android:gravity="center_vertical"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="50dp"
+                    android:textSize="16dp"
+                    android:textColor="@color/white"
+                    android:layout_height="match_parent">
+                </TextView>
+            </RelativeLayout>
+            <SearchView
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:background="@drawable/rect_box"
+                android:layout_height="50dp">
+            </SearchView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+                <TextView
+                    android:id="@+id/running_tv"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="All Doubts"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:background="@color/red"
+                    android:gravity="center"
+                    android:layout_height="match_parent">
+
+                </TextView>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Ask Doubts"
+                    android:id="@+id/myorder_tv"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:background="@color/grey"
+                    android:layout_height="match_parent">
+
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/currentorder_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:text="No Record Found !"
+                        android:textColor="@color/grey"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/wallet_histroy"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="visible" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/myorder_rl"
+                android:visibility="gone"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Spinner
+                    android:id="@+id/coursesspinner"
+                    android:layout_height="50dp"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/rect_box"
+
+                    android:layout_marginTop="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_centerInParent="true"
+                    android:text="Upload Query screenshot(Optional)"
+                    android:padding="3dp"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rect"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="25dp">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/img_showProfile"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:padding="1dp"
+                        android:background="@drawable/test"
+                        />
+                    <TextView
+                        android:id="@+id/select_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_centerInParent="true"
+                        android:text="Upload Image"
+                        android:layout_marginLeft="20dp"
+                        android:layout_gravity="center_vertical"
+                        android:textSize="16dp"
+
+                        android:background="@drawable/rect"
+                        android:gravity="center_vertical"
+                        android:paddingRight="30dp"
+                        android:paddingLeft="30dp"
+                        android:textColor="@color/red"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Enter Query *"
+                    android:layout_marginTop="5dp"
+                    android:padding="3dp"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:background="@drawable/rect"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/feedback_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:maxLines="4"
+                        android:background="@null"
+                        android:hint=" Explain your Query here..." />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/update_btn"
+                    android:layout_width="250dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="40dp"
+                    android:background="@drawable/login_button_bk"
+                    android:text="Submit"
+                    android:textColor="#fff"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/rlBottom"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        app:itemIconTint="@drawable/selector_stock_bottom_nav_view"
+        app:itemTextColor="@drawable/selector_stock_bottom_nav_view"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/bottom_nav_menu" />
+
+</RelativeLayout>

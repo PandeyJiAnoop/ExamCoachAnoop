@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="3dp"
+    android:layout_margin="3dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView
+            android:layout_width="50dp"
+            android:id="@+id/card"
+            android:layout_alignParentLeft="true"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            app:cardCornerRadius="25dp"
+            android:background="@drawable/photoshape"
+            >
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:scaleType="fitXY"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_baseline_account_circle_24"
+                ></ImageView>
+        </androidx.cardview.widget.CardView>
+        <LinearLayout
+            android:layout_toLeftOf="@+id/amountll"
+            android:layout_toRightOf="@+id/card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="5dp">
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5 Points added in your wallet"
+                android:textSize="13sp"
+                android:textColor="@color/black"
+                android:textStyle="bold">
+            </TextView>
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Successfully Deposit"
+                android:textSize="14sp">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_alignParentRight="true"
+            android:gravity="end"
+            android:id="@+id/amountll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:layout_gravity="center_vertical">
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" ₹ 5"
+                android:textSize="17sp"
+                android:textColor="@color/red">
+            </TextView>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>

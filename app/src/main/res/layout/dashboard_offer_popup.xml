@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/purple_700"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/top_layout">
+        <ImageButton
+            android:layout_alignParentRight="true"
+            android:id="@+id/ib_close"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/close" />
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardCornerRadius="5dp"
+        android:layout_below="@+id/top_layout"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/offer_img"
+            android:layout_width="match_parent"
+            android:src="@drawable/das_offer"
+            android:scaleType="fitXY"
+            android:layout_height="200dp">
+        </ImageView>
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:padding="10dp"
+        android:id="@+id/link_tv"
+        android:autoLink="web"
+        android:textSize="16dp"
+        android:text="Exam Coach Better Study..http://examcoach.in/"
+        android:textColor="@color/white"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:fadingEdge="horizontal"
+
+
+        android:layout_height="wrap_content">
+
+    </TextView>
+</LinearLayout>

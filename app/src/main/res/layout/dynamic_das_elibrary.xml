@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="10dp"
+    android:gravity="center_vertical"
+    android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/mobile_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@drawable/ebook_pdf"
+                android:id="@+id/provider_img"
+                android:layout_gravity="center_horizontal"/>
+            <View
+                android:layout_width="match_parent"
+                android:background="#CBCBCB"
+                android:layout_height="0.1dp">
+            </View>
+            <LinearLayout
+                android:padding="2dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="₹ "
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="@color/red"/>
+                <TextView
+                    android:id="@+id/price_tv"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="@color/red"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:background="#CBCBCB"
+                android:layout_height="0.1dp">
+            </View>
+            <TextView
+                android:id="@+id/provider_name_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp"
+                android:text="Mobile \nRecharge"
+                android:textSize="12sp"
+                android:textColor="@android:color/black" />
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/des_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mobile "
+                android:textSize="12sp"
+                android:textColor="@android:color/black" />
+            <LinearLayout
+                android:layout_gravity="end"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:gravity="end"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp">
+                <TextView
+                    android:padding="5dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/rounded_edittext_black"
+                    android:text="Purchase Now"
+                    android:id="@+id/purchase_tv"
+                    android:textSize="10sp"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+</androidx.cardview.widget.CardView>

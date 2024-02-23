@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:elevation="5dp"
+    android:orientation="vertical"
+    android:background="@color/whiteCardColor">
+    <ImageView
+        android:id="@+id/back_img"
+        android:layout_width="50dp"
+        android:padding="15dp"
+        android:src="@drawable/back"
+        android:layout_height="50dp">
+    </ImageView>
+
+    <ScrollView
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:padding="15dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@drawable/logo"
+                android:padding="10dp"
+                android:layout_height="100dp">
+            </ImageView>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="Enter Verification code sent to"
+                android:textAllCaps="true"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="16dp"
+                android:textColor="@color/primaryTextColor"
+                android:layout_marginTop="25dp"/>
+            <TextView
+                android:id="@+id/mob_tv"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:maxLines="1"
+                android:padding="5dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:text="+91- 9696381023"/>
+            <EditText
+                android:id="@+id/otp_et"
+                android:background="@drawable/rect_box"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:maxLines="1"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:hint="Enter 6 Digit OTP Number"/>
+            <in.dhinakaran.simpleotplibrary.SimpleOTP
+                android:id="@+id/simple_et"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="10dp" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/verify_btn"
+                android:background="@color/primaryTextColor"
+                android:text="Verify"
+                android:textColor="@color/white"
+                android:layout_gravity="center_horizontal"/>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="Did not recieve a code ?"
+                android:textSize="14dp"
+                android:textAlignment="center"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:onClick="viewForgotPAssword"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="Resend SMS"
+                android:textSize="@dimen/newsMoreTextSize"
+                android:textAlignment="center"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold"
+                android:onClick="viewForgotPAssword"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

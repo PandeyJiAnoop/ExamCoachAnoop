@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_marginBottom="60dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/top_rl"
+                android:layout_width="match_parent"
+                android:background="@color/colorAccent"
+                android:layout_height="50dp">
+                <ImageView
+                    android:id="@+id/back_img"
+                    android:layout_width="50dp"
+                    android:padding="15dp"
+                    android:tint="@color/white"
+                    android:src="@drawable/back"
+                    android:layout_height="50dp">
+                </ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Test Series"
+                    android:gravity="center_vertical"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="50dp"
+                    android:textSize="16dp"
+                    android:textColor="@color/white"
+                    android:layout_height="match_parent">
+
+                </TextView>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/img"
+                    android:background="@drawable/circle"
+                    android:layout_width="50dp"
+                    android:padding="10dp"
+                    android:tint="@color/white"
+                    android:layout_height="50dp"
+                    android:src="@drawable/nav_live"
+                    ></ImageView>
+                <LinearLayout
+                    android:layout_toRightOf="@+id/img"
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Purchased test"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:textSize="14dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_height="match_parent">
+
+                    </TextView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Tap to see your Test/Quiz"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:layout_height="match_parent">
+
+                    </TextView>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/wallet_histroy2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+
+
+
+
+
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:id="@+id/cat_rl"
+                android:layout_height="50dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/white"
+                    android:text="  Free Test "
+                    
+                    android:layout_marginLeft="5dp"
+                    android:backgroundTint="@color/red"
+                    android:gravity="center_horizontal"
+                    android:background="@drawable/butn"
+                    android:padding="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content">
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:text="Paid "
+                    android:layout_marginLeft="5dp"
+                    
+                    android:gravity="center_horizontal"
+                    android:background="@drawable/butn"
+                    android:padding="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content">
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:text=" Live test "
+                    android:layout_marginLeft="5dp"
+
+                    android:gravity="center_horizontal"
+                    android:background="@drawable/butn"
+                    android:padding="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content">
+                </TextView>  <TextView
+                android:layout_width="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                android:text=" Quiz "
+                android:layout_marginLeft="5dp"
+
+                android:gravity="center_horizontal"
+                android:background="@drawable/butn"
+                android:padding="5dp"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content">
+            </TextView>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="No Record Found!"
+                    android:textColor="@color/grey"
+                    android:layout_margin="20dp"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/wallet_histroy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </androidx.recyclerview.widget.RecyclerView>
+
+            </RelativeLayout>
+
+
+            <!--     <androidx.cardview.widget.CardView
+                     android:layout_margin="3dp"
+                     app:cardCornerRadius="10dp"
+                     android:elevation="5dp"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content">
+                     <RelativeLayout
+                         android:layout_width="match_parent"
+                         android:padding="5dp"
+                         android:layout_height="wrap_content">
+                         <de.hdodenhof.circleimageview.CircleImageView
+                             android:layout_width="50dp"
+                             android:tint="@color/white"
+                             android:layout_height="50dp"
+                             android:src="@drawable/ibps"
+                             ></de.hdodenhof.circleimageview.CircleImageView>
+                         <LinearLayout
+                             android:layout_marginLeft="50dp"
+                             android:layout_width="wrap_content"
+                             android:orientation="vertical"
+                             android:layout_centerVertical="true"
+                             android:gravity="center_vertical"
+                             android:layout_height="wrap_content">
+                             <TextView
+                                 android:layout_width="wrap_content"
+                                 android:text="IBPS PO Free Mock Test"
+                                 android:gravity="center_vertical"
+                                 android:layout_marginLeft="5dp"
+                                 android:textSize="14dp"
+                                 android:textStyle="bold"
+                                 android:textColor="@color/black"
+                                 android:layout_height="match_parent">
+
+                             </TextView>
+                             <TextView
+                                 android:layout_width="wrap_content"
+                                 android:text="Bank(2 Test)"
+                                 android:gravity="center_vertical"
+                                 android:layout_marginLeft="5dp"
+                                 android:layout_height="match_parent">
+
+                             </TextView>
+                         </LinearLayout>
+
+                         <LinearLayout
+                             android:layout_margin="5dp"
+                             android:background="#079E0D"
+                             android:layout_width="wrap_content"
+                             android:layout_alignParentRight="true"
+                             android:layout_height="wrap_content">
+                             <ImageView
+                                 android:id="@+id/blink"
+                                 android:layout_gravity="center_vertical"
+                                 android:layout_width="15dp"
+                                 android:layout_marginLeft="5dp"
+                                 android:src="@android:drawable/radiobutton_off_background"
+                                 android:layout_height="15dp">
+                             </ImageView>
+                             <TextView
+                                 android:layout_width="wrap_content"
+                                 android:text="New"
+                                 android:paddingBottom="2dp"
+                                 android:paddingTop="2dp"
+                                 android:paddingRight="5dp"
+                                 android:textStyle="bold"
+                                 android:textColor="@color/white"
+                                 android:paddingLeft="5dp"
+                                 android:layout_height="wrap_content">
+                             </TextView>
+                         </LinearLayout>
+
+
+                     </RelativeLayout>
+                 </androidx.cardview.widget.CardView>
+
+                 <androidx.cardview.widget.CardView
+                     android:layout_margin="3dp"
+                     app:cardCornerRadius="10dp"
+                     android:elevation="5dp"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content">
+                     <RelativeLayout
+                         android:layout_width="match_parent"
+                         android:padding="5dp"
+                         android:layout_height="wrap_content">
+                         <de.hdodenhof.circleimageview.CircleImageView
+                             android:layout_width="50dp"
+                             android:tint="@color/white"
+                             android:layout_height="50dp"
+                             android:src="@drawable/rrb"
+                             ></de.hdodenhof.circleimageview.CircleImageView>
+                         <LinearLayout
+                             android:layout_marginLeft="50dp"
+                             android:layout_width="wrap_content"
+                             android:orientation="vertical"
+                             android:layout_centerVertical="true"
+                             android:gravity="center_vertical"
+                             android:layout_height="wrap_content">
+                             <TextView
+                                 android:layout_width="wrap_content"
+                                 android:text="RRB Group D"
+                                 android:gravity="center_vertical"
+                                 android:layout_marginLeft="5dp"
+                                 android:textSize="14dp"
+                                 android:textStyle="bold"
+                                 android:textColor="@color/black"
+                                 android:layout_height="match_parent">
+
+                             </TextView>
+                             <TextView
+                                 android:layout_width="wrap_content"
+                                 android:text="Railway (3 test)"
+                                 android:gravity="center_vertical"
+                                 android:layout_marginLeft="5dp"
+                                 android:layout_height="match_parent">
+
+                             </TextView>
+                         </LinearLayout>
+
+                         <LinearLayout
+
+                             android:layout_margin="5dp"
+                             android:background="#079E0D"
+                             android:layout_width="wrap_content"
+                             android:layout_alignParentRight="true"
+                             android:layout_height="wrap_content">
+                             <ImageView  android:id="@+id/blink1"
+                                 android:layout_gravity="center_vertical"
+                                 android:layout_width="15dp"
+                                 android:layout_marginLeft="5dp"
+                                 android:src="@android:drawable/radiobutton_off_background"
+                                 android:layout_height="15dp">
+                             </ImageView>
+                             <TextView
+                                 android:layout_width="wrap_content"
+                                 android:text="New"
+                                 android:paddingBottom="2dp"
+                                 android:paddingTop="2dp"
+                                 android:paddingRight="5dp"
+                                 android:textStyle="bold"
+                                 android:textColor="@color/white"
+                                 android:paddingLeft="5dp"
+                                 android:layout_height="wrap_content">
+                             </TextView>
+                         </LinearLayout>
+
+                     </RelativeLayout>
+                 </androidx.cardview.widget.CardView>
+                 <androidx.cardview.widget.CardView
+                     android:layout_margin="3dp"
+                     app:cardCornerRadius="10dp"
+                     android:elevation="5dp"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content">
+                     <RelativeLayout
+                         android:layout_width="match_parent"
+                         android:padding="5dp"
+                         android:layout_height="wrap_content">
+                         <de.hdodenhof.circleimageview.CircleImageView
+                             android:layout_width="50dp"
+                             android:tint="@color/white"
+                             android:layout_height="50dp"
+                             android:src="@drawable/ssc"
+                             ></de.hdodenhof.circleimageview.CircleImageView>
+                         <LinearLayout
+                             android:layout_marginLeft="50dp"
+                             android:layout_width="wrap_content"
+                             android:orientation="vertical"
+                             android:layout_centerVertical="true"
+                             android:gravity="center_vertical"
+                             android:layout_height="wrap_content">
+                             <TextView
+                                 android:layout_width="wrap_content"
+                                 android:text="SSC GD Mock test"
+                                 android:gravity="center_vertical"
+                                 android:layout_marginLeft="5dp"
+                                 android:textSize="14dp"
+                                 android:textStyle="bold"
+                                 android:textColor="@color/black"
+                                 android:layout_height="match_parent">
+
+                             </TextView>
+                             <TextView
+                                 android:layout_width="wrap_content"
+                                 android:text="SSS (2 test)"
+                                 android:gravity="center_vertical"
+                                 android:layout_marginLeft="5dp"
+                                 android:layout_height="match_parent">
+
+                             </TextView>
+                         </LinearLayout>
+
+                         <LinearLayout
+                             android:layout_margin="5dp"
+                             android:background="#079E0D"
+                             android:layout_width="wrap_content"
+                             android:layout_alignParentRight="true"
+                             android:layout_height="wrap_content">
+                             <ImageView                         android:id="@+id/blink2"
+
+                                 android:layout_gravity="center_vertical"
+                                 android:layout_width="15dp"
+                                 android:layout_marginLeft="5dp"
+                                 android:src="@android:drawable/radiobutton_off_background"
+                                 android:layout_height="15dp">
+                             </ImageView>
+                             <TextView
+                                 android:layout_width="wrap_content"
+                                 android:text="New"
+                                 android:paddingBottom="2dp"
+                                 android:paddingTop="2dp"
+                                 android:paddingRight="5dp"
+                                 android:textStyle="bold"
+                                 android:textColor="@color/white"
+                                 android:paddingLeft="5dp"
+                                 android:layout_height="wrap_content">
+                             </TextView>
+                         </LinearLayout>
+                     </RelativeLayout>
+                 </androidx.cardview.widget.CardView>-->
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/rlBottom"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        app:itemIconTint="@drawable/selector_stock_bottom_nav_view"
+        app:itemTextColor="@drawable/selector_stock_bottom_nav_view"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/bottom_nav_menu" />
+
+</RelativeLayout>

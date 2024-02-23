@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+    <View
+        android:id="@+id/view"
+        android:background="#9E9D9D"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"></View>
+    <HorizontalScrollView
+        android:layout_below="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:scrollbars="none"
+        android:id="@+id/horizontalScrollView">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/nav_home"
+            android:gravity="center_horizontal"
+            android:layout_width="90dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginTop="2dp"
+                android:layout_width="40dp"
+                android:src="@drawable/btn_one"
+                android:layout_height="40dp">
+            </ImageView>
+            <TextView
+                android:textSize="11dp"
+                android:layout_width="wrap_content"
+                android:text="Home"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content">
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/nav_live"
+            android:gravity="center_horizontal"
+            android:layout_width="90dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginTop="2dp"
+                android:layout_width="40dp"
+                android:src="@drawable/btn_two"
+                android:layout_height="40dp">
+            </ImageView>
+            <TextView android:textSize="11dp"
+                android:layout_width="wrap_content"
+                android:text="Live Class"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content">
+            </TextView>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/nav_lib"
+            android:gravity="center_horizontal"
+            android:layout_width="90dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginTop="2dp"
+                android:layout_width="40dp"
+                android:src="@drawable/btn_three"
+                android:layout_height="40dp">
+            </ImageView>
+            <TextView android:textSize="11dp"
+                android:layout_width="wrap_content"
+                android:text="Articles"
+                android:layout_gravity="center_horizontal"
+
+                android:textColor="@color/black"
+                android:layout_height="wrap_content">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/nav_test"
+            android:gravity="center_horizontal"
+            android:layout_width="90dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginTop="2dp"
+                android:layout_width="40dp"
+                android:src="@drawable/btn_four"
+                android:layout_height="40dp">
+            </ImageView>
+            <TextView android:textSize="11dp"
+                android:layout_width="wrap_content"
+                android:text="Test Series"
+                android:layout_gravity="center_horizontal"
+
+                android:textColor="@color/black"
+                android:layout_height="wrap_content">
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/nav_douts"
+            android:gravity="center_horizontal"
+            android:layout_width="90dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginTop="2dp"
+                android:layout_width="40dp"
+                android:src="@drawable/btn_five"
+                android:layout_height="40dp">
+            </ImageView>
+            <TextView android:textSize="11dp"
+                android:layout_width="wrap_content"
+                android:text="Doubts"
+                android:layout_gravity="center_horizontal"
+
+                android:textColor="@color/black"
+                android:layout_height="wrap_content">
+            </TextView>
+        </LinearLayout>
+
+    </LinearLayout>
+    </HorizontalScrollView>
+</RelativeLayout>

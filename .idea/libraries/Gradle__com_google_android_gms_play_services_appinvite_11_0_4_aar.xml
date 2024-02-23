@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.android.gms:play-services-appinvite:11.0.4@aar">
+    <CLASSES>
+      <root url="jar://C:/Program Files/Java/jdk-18.0.2/bin/caches/transforms-3/9834edfd5696484a6c8b6f6ae16dee09/transformed/jetified-play-services-appinvite-11.0.4/jars/classes.jar!/" />
+      <root url="file://C:/Program Files/Java/jdk-18.0.2/bin/caches/transforms-3/9834edfd5696484a6c8b6f6ae16dee09/transformed/jetified-play-services-appinvite-11.0.4/res" />
+      <root url="file://C:/Program Files/Java/jdk-18.0.2/bin/caches/transforms-3/9834edfd5696484a6c8b6f6ae16dee09/transformed/jetified-play-services-appinvite-11.0.4/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

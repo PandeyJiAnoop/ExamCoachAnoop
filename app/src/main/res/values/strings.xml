@@ -1,0 +1,94 @@
+<resources>
+    <string name="app_name">ExamCoach</string>
+
+    <string name="register">REGISTER</string>
+    <string name="login_email_hint">Email</string>
+    <string name="login_password_hint">Password</string>
+    <string name="signup_login_hint">Already have an account? Sign In</string>
+    <string name="login_signup_hint">Don\'t have an account? Sign Up</string>
+
+
+    <string-array name="spinnerItems">
+        <item>Select Course</item>
+        <item>Math</item>
+        <item>SSC</item>
+        <item>Technology</item>
+        <item>TET Super TET</item>
+        <item>Reasoning</item>
+        <item>Science</item>
+        <item>Geography</item>
+        <item>Hindi</item>
+        <item>Banking</item>
+        <item>Railways</item>
+    </string-array>
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string name="str_share_this_video">Share using Drop Easy,Best Service Provider In INDIA</string>
+    <string name="error_player">There was an error initializing the YouTubePlayer (%1$s)</string>
+
+
+    <string name="aresurelogout">Are you sure you want to log out?</string>
+    <string name="newVersion">Update to the latest Version</string>
+    <string name="update">Update</string>
+    <string name="please_wait">please wait....</string>
+
+    <string-array name="aayog">
+        <item>Select Aayog </item>
+        <item>Competative Exam</item>
+        <item>Academic Exam</item>
+    </string-array>
+
+    <string-array name="cource">
+        <item>Select Course </item>
+        <item>SUPER TET</item>
+        <item>SSC</item>
+    </string-array>
+
+
+    <string-array name="subject">
+        <item>Select Subject </item>
+        <item>Math</item>
+        <item>Science</item>
+    </string-array>
+
+
+    <string-array name="bactch">
+        <item>Select Batches </item>
+        <item>Math-1 By AKP</item>
+        <item>Science by Sk Sir</item>
+    </string-array>
+
+
+    <string-array name="selectques">
+        <item>Question List </item>
+        <item>Article List</item>
+        <item>Video List</item>
+    </string-array>
+
+    <string name="pdf_url">PDF URL</string>
+    <string name="permission_request_message">Storage permission allows us to save pdf.</string>
+
+
+    <string name="errorInternet">Please check your internet connection.</string>
+    <string name="cancel">Cancel</string>
+    <string name="no_internet_connection">You are offline. \nPlease check your Internet
+        connection.</string>
+    <string name="Yes">Yes</string>
+    <string name="No">No</string>
+
+    <string-array name="speed_options">
+        <item>0.25x</item>
+        <item>0.5x</item>
+        <item>0.75x</item>
+        <item>1.0x</item>
+        <item>1.25x</item>
+        <item>1.5x</item>
+        <item>1.75x</item>
+        <item>2.0x</item>
+    </string-array>
+
+
+</resources>

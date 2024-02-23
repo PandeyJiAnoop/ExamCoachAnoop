@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardview1"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="2dp"
+        app:cardCornerRadius="5dp"
+        app:strokeWidth="2dp"
+        app:cardElevation="10dp"
+        app:cardBackgroundColor="@color/white"
+        android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/img"
+                    android:src="@drawable/question"
+                    android:layout_centerVertical="true"
+                    android:layout_width="80dp"
+                    android:layout_height="120dp">
+
+                </ImageView>
+                <ImageView
+                    android:visibility="gone"
+                    android:id="@+id/paid_img"
+                    android:layout_width="25dp"
+                    android:src="@drawable/freeimg"
+                    android:layout_height="25dp">
+                </ImageView>
+                <LinearLayout
+                    android:layout_toRightOf="@+id/img"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/title_tv"
+                            android:layout_toLeftOf="@+id/status_tv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="16dp"
+                            android:text="UPTET"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="14dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/start_test_tv"
+                            android:layout_alignParentRight="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Start Test "
+                            android:padding="8dp"
+                            android:background="#349A38"
+                            android:textColor="@color/white"
+                            android:textSize="13dp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:visibility="gone"
+                            android:id="@+id/attemped_tv"
+                            android:layout_alignParentRight="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Attempted "
+                            android:padding="8dp"
+                            android:background="#F44336"
+                            android:textColor="@color/white"
+                            android:textSize="13dp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+                    <TextView
+                        android:id="@+id/exam_cat_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="6dp"
+                        android:text="NEET PRIMARY"
+                        android:textSize="12dp" />
+                    <TextView
+                        android:id="@+id/exam_code_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="3dp"
+                        android:text="UPTET - EX-0000001 "
+                        android:textSize="12dp" />
+                    <TextView
+                        android:id="@+id/quest_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="3dp"
+                        android:text="Total Questions:- 10"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/starttime_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="3dp"
+                        android:text="Total Questions:- 10"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/startdate_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="3dp"
+                        android:maxLength="22"
+                        android:text="Total Questions:- 10"
+                        android:textSize="14dp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/mark_tv"
+                            android:background="@drawable/rect_red"
+                            android:layout_marginBottom="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="6dp"
+                            android:padding="10dp"
+                            android:text="Marks 10"
+                            android:textColor="@color/white"
+                            android:textSize="13dp" />
+                        <TextView
+                            android:layout_gravity="end"
+                            android:id="@+id/duration_tv"
+                            android:layout_marginBottom="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="6dp"
+                            android:padding="5dp"
+                            android:text="Duration- 60 min."
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="12dp" />
+                        <TextView
+                            android:visibility="gone"
+                            android:id="@+id/view_result"
+                            android:layout_below="@+id/mark_tv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="View Result "
+                            android:textAlignment="center"
+                            android:padding="8dp"
+                            android:background="#979797"
+                            android:textColor="@color/black"
+                            android:textSize="13dp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

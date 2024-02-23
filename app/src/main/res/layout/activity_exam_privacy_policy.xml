@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/top_rl"
+        android:layout_width="match_parent"
+        android:background="@color/colorAccent"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/back_img"
+            android:layout_width="50dp"
+            android:padding="15dp"
+            android:tint="@color/white"
+            android:src="@drawable/back"
+            android:layout_height="50dp">
+        </ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Exam Privacy Policy"
+            android:gravity="center_vertical"
+            android:textStyle="bold"
+            android:layout_marginLeft="50dp"
+            android:textSize="16dp"
+            android:textColor="@color/white"
+            android:layout_height="match_parent">
+        </TextView>
+    </RelativeLayout>
+
+   <ScrollView
+       android:layout_below="@+id/top_rl"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:orientation="vertical"
+           android:layout_height="wrap_content">
+           <LinearLayout
+               android:id="@+id/ll_notstart"
+               android:layout_width="match_parent"
+               android:orientation="vertical"
+               android:layout_height="wrap_content">
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:textSize="26dp"
+                   android:padding="10dp"
+                   android:textStyle="bold"
+                   android:layout_marginTop="20dp"
+                   android:background="@drawable/rect"
+                   android:gravity="center_horizontal"
+                   android:layout_gravity="center_horizontal"
+                   android:text="Exam Not Started Yet\nPlease Wait....."
+                   android:textColor="@color/red"
+
+                   android:layout_height="wrap_content">
+
+               </TextView>
+           </LinearLayout>
+
+           <LinearLayout
+               android:id="@+id/ll_start"
+               android:layout_width="match_parent"
+               android:orientation="vertical"
+               android:layout_height="wrap_content">
+               <TextView
+                   android:id="@+id/exam_name_tv"
+                   android:layout_width="wrap_content"
+                   android:text="Exam Privacy Policy"
+                   android:gravity="center_horizontal"
+                   android:padding="10dp"
+                   android:textStyle="bold"
+                   android:layout_gravity="center_horizontal"
+                   android:textSize="15dp"
+                   android:textColor="@color/black"
+                   android:layout_height="match_parent">
+               </TextView>
+               <View
+                   android:elevation="5dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="0.5dp"
+                   android:background="@color/grey">
+               </View>
+               <TextView
+                   android:id="@+id/des_textview"
+                   android:layout_width="wrap_content"
+                   android:text="Exam Privacy Policy"
+                   android:padding="5dp"
+                   android:layout_margin="5dp"
+                   android:textSize="14dp"
+                   android:textColor="@color/black"
+                   android:layout_height="match_parent">
+               </TextView>
+               <CheckBox
+                   android:id="@+id/cbWindows"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:clickable="true"
+                   android:textSize="11sp"
+                   android:layout_margin="5dp"
+                   android:textColor="@color/red"
+                   android:text="I have read and understood the instructions. &amp; Check Mobile network and WIFI are in proper working conditions \nI agree that in case of not adhering to instructions,I will be disqualified from giving exam." />
+               <androidx.appcompat.widget.AppCompatButton
+                   android:layout_height="45dp"
+                   android:layout_width="250dp"
+                   android:id="@+id/login_btn"
+                   android:layout_marginTop="5dp"
+                   android:textAllCaps="false"
+                   android:layout_marginRight="20dp"
+                   android:layout_marginBottom="20dp"
+                   android:layout_marginLeft="20dp"
+                   android:backgroundTint="#37983B"
+                   android:background="@drawable/login_button_bk"
+                   android:text="I'm ready to Begin"
+                   android:textColor="@color/white"
+                   android:layout_gravity="center_horizontal"/>
+
+           </LinearLayout>
+
+       </LinearLayout>
+
+   </ScrollView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

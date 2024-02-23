@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/backgrond"
+    android:layout_height="match_parent"
+    tools:context=".Basic.Teacher.TeacherStartClass">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorAccent"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/back_img"
+            android:layout_width="50dp"
+            android:padding="15dp"
+            android:tint="@color/white"
+            android:src="@drawable/back"
+            android:layout_height="50dp">
+        </ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Start Class"
+            android:layout_centerInParent="true"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content">
+        </TextView>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+<!--
+    <LinearLayout
+        android:background="@drawable/rect_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Spinner
+            android:layout_height="50dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            
+            android:entries="@array/aayog"/>
+
+        <Spinner
+            android:layout_height="50dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            
+            android:entries="@array/cource"/>
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@drawable/rect_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Spinner
+            android:layout_height="50dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            
+            android:entries="@array/subject"/>
+
+        <Spinner
+            android:layout_height="50dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            
+            android:entries="@array/bactch"/>
+
+    </LinearLayout>-->
+
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="7dp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="Add title"
+            android:textColor="@color/black"
+            android:textSize="@dimen/newsMoreTextSize"
+            android:layout_marginTop="5dp"/>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_height="50dp"
+            android:layout_width="match_parent"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <EditText
+                android:id="@+id/title_et"
+                android:drawableTint="@color/black"
+                android:drawableRight="@android:drawable/ic_menu_mylocation"
+                style="@style/modifiedEditText"
+                android:maxLines="5"
+                android:hint="Enter title here"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="UrlLink"
+            android:textColor="@color/black"
+            android:textSize="@dimen/newsMoreTextSize"
+            android:layout_marginTop="5dp"/>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_height="50dp"
+            android:layout_width="match_parent"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <EditText
+                android:id="@+id/urlLink_et"
+                android:drawableTint="@color/black"
+                android:drawableRight="@android:drawable/ic_menu_mylocation"
+                style="@style/modifiedEditText"
+                android:maxLines="5"
+                android:hint="Enter UrlLink here"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="Discription"
+            android:textColor="@color/black"
+            android:textSize="@dimen/newsMoreTextSize"
+            android:layout_marginTop="5dp"/>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_height="50dp"
+            android:layout_width="match_parent"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <EditText
+                android:id="@+id/discription_et"
+                android:drawableTint="@color/black"
+                android:drawableRight="@android:drawable/ic_menu_mylocation"
+                style="@style/modifiedEditText"
+                android:maxLines="5"
+                android:hint="Enter Discription here"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="Start date"
+            android:textColor="@color/black"
+            android:textSize="@dimen/newsMoreTextSize"
+            android:layout_marginTop="5dp"/>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_height="50dp"
+            android:layout_width="match_parent"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <EditText
+                android:id="@+id/sdate_et"
+                android:drawableTint="@color/black"
+                android:drawableRight="@drawable/referralimg"
+                style="@style/modifiedEditText"
+                android:maxLines="5"
+                android:focusable="false"
+                android:hint="Start Date"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="Start Time"
+            android:textColor="@color/black"
+            android:textSize="@dimen/newsMoreTextSize"
+            android:layout_marginTop="5dp"/>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_height="50dp"
+            android:layout_width="match_parent"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <EditText
+                android:id="@+id/stime_et"
+                android:drawableTint="@color/black"
+                android:drawableRight="@drawable/referralimg"
+                style="@style/modifiedEditText"
+                android:maxLines="5"
+                android:focusable="false"
+                android:hint="Start Time"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+       <!-- <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="End date"
+            android:textColor="@color/black"
+            android:textSize="@dimen/newsMoreTextSize"
+            android:layout_marginTop="5dp"/>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_height="50dp"
+            android:layout_width="match_parent"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <EditText
+                android:id="@+id/edate_et"
+                android:drawableTint="@color/black"
+                android:drawableRight="@drawable/referralimg"
+                style="@style/modifiedEditText"
+                android:maxLines="5"
+                android:hint="End Date"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="End Time"
+            android:textColor="@color/black"
+            android:textSize="@dimen/newsMoreTextSize"
+            android:layout_marginTop="5dp"/>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_height="50dp"
+            android:layout_width="match_parent"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <EditText
+
+                android:id="@+id/etime_et"
+                android:drawableTint="@color/black"
+                android:drawableRight="@drawable/referralimg"
+                style="@style/modifiedEditText"
+                android:maxLines="5"
+                android:hint="End Time"/>
+        </com.google.android.material.textfield.TextInputLayout>
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/save_rl"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="50dp">
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="#03A9F4"
+                    android:orientation="horizontal"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp"
+                        android:gravity="center_vertical"
+                        android:drawableTint="@color/white"
+                        android:drawableLeft="@drawable/ic_coin"
+                        android:text=" Click here to Save Record"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:layout_centerInParent="true"
+                        android:layout_centerVertical="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+
+
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/start_time"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="50dp">
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/apply_rl"
+                    android:background="#4CAF50"
+                    android:orientation="horizontal"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp"
+                        android:gravity="center_vertical"
+                        android:drawableTint="@color/white"
+                        android:drawableLeft="@drawable/ic_coin"
+                        android:text=" Click here to Start Timer"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:layout_centerInParent="true"
+                        android:layout_centerVertical="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/end_time"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="50dp">
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="#F44336"
+                    android:orientation="horizontal"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp"
+                        android:gravity="center_vertical"
+                        android:drawableTint="@color/white"
+                        android:drawableLeft="@drawable/ic_coin"
+                        android:text=" Click here to End Class"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:layout_centerInParent="true"
+                        android:layout_centerVertical="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#012060</color>
+    <color name="purple_700">#F2012060</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="green">#36AA3B</color>
+
+
+        <color name="colorPrimary">#012060</color>
+        <color name="colorPrimaryDark">#F2012060</color>
+        <color name="colorAccent">#F2012060</color>
+
+        <!--colors for modern ui-->
+        <color name="whiteTextColor">#fff</color>
+        <color name="primaryTextColor">#F2012060</color>
+        <color name="loginBkColor">#f0f0f0</color>
+
+        <!--colros for card-->
+        <color name="whiteCardColor">#fff</color>
+    <color name="transparent">#8e030303</color>
+
+    <color name="red">#E63528</color>
+
+<color name="grey">#A6A6A6</color>
+
+    <color name="statusBarColor">#000</color>
+    <color name="black_et">#424141</color>
+    <color name="skyblue">#56BCE7</color>
+    <color name="golden">#B83930</color>
+
+    <!-- Screens background color-->
+    <color name="bg_screen1">#9C27B0</color>
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#7B1FA2</color>
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#E1BEE7</color>
+
+    <!-- Placeholder colors-->
+    <color name="stay_color">#999999</color>
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen1</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen1</item>
+    </array>
+
+
+</resources>

@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.akp.examcoach">
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="31" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <queries>
+        <intent>
+            <action android:name="com.google.android.youtube.api.service.START" />
+        </intent>
+    </queries>
+
+    <application
+        android:allowBackup="true"
+        android:exported="true"
+        android:icon="@drawable/logoicon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/logoicon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SplashActivity"
+        android:usesCleartextTraffic="true"
+        android:windowSoftInputMode="stateVisible|adjustResize">
+
+        <activity android:name=".Basic.YoutubeJune.June_PlayVideoWebview" android:screenOrientation="landscape"> </activity>
+
+        <activity android:name=".Basic.YoutubeJune.June_YoutubeWebview" android:screenOrientation="portrait"/>
+
+        <activity android:name=".Basic.CustomerCourseList" />
+        <activity
+            android:name=".Basic.FullscreenVideo"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:label=".Basic.FullscreenVideo"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity android:name=".Basic.DemoAkp" />
+        <activity
+            android:name=".Basic.QuizExam.StartQuizTestWeb"
+            android:exported="true" />
+        <activity
+            android:name=".Basic.slidingmenu.CustomerOrderDeatils"
+            android:exported="true" />
+        <activity
+            android:name=".Basic.FullImagePage"
+            android:exported="true" />
+        <activity
+            android:name=".Basic.DasELibraryNew.ViewPDFELibrary"
+            android:exported="true" />
+        <activity
+            android:name=".Basic.DasELibraryNew.LiveClassBatchDetailsELibrary"
+            android:exported="true" />
+        <activity
+            android:name=".Basic.DasELibraryNew.LiveClassCategoryDetailsELibrary"
+            android:exported="true" />
+        <activity
+            android:name=".Basic.DasELibraryNew.CourceListNewELibrary"
+            android:exported="true" />
+        <activity
+            android:name=".Basic.DasELibraryNew.Das_Live_AyogListELibrary"
+            android:exported="true" />
+        <activity
+            android:name=".Basic.EbookPayment.EBookRazorpay"
+            android:exported="true" />
+        <activity
+            android:name=".Basic.CourceListNew"
+            android:exported="true" />
+        <activity
+            android:name=".Basic.QuizExam.ViewResult"
+            android:exported="true" />
+        <activity
+            android:name=".Basic.planpackage.MenuPackageList"
+            android:exported="true" />
+        <activity
+            android:name=".Basic.planpackage.RazorpayPayment"
+            android:exported="true" />
+        <activity
+            android:name=".Basic.planpackage.AllPlanPackage"
+            android:exported="true" />
+        <activity
+            android:name=".Basic.QuizExam.StartQuizTest"
+            android:exported="true" />
+        <activity
+            android:name=".Basic.LiveClass.ExamPrivacyPolicy"
+            android:exported="true" />
+        <activity
+            android:name=".Basic.EbooksDashboard.EbookNotes"
+            android:exported="true" />
+        <activity
+            android:name=".Basic.EbooksDashboard.LiveClassCategoryDetailsEbook"
+            android:exported="true" />
+        <activity
+            android:name=".Basic.EbooksDashboard.Das_LiveClassEbook"
+            android:exported="true" />
+        <activity
+            android:name=".Basic.ViewPDF"
+            android:exported="true" />
+        <activity
+            android:name=".Basic.YoutubeCustome"
+            android:exported="true" />
+
+        <activity
+            android:name=".Basic.CustomePlayerYoutube"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:label=".Basic.CustomePlayerYoutube"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+
+        <activity
+            android:name=".Basic.Teacher.TeacherStartClass"
+            android:exported="true" />
+
+        <activity
+            android:name=".Basic.Teacher.TeacherChangePassword"
+            android:exported="true" />
+
+        <activity
+            android:name=".Basic.Teacher.TeacherClassHistory"
+            android:exported="true" />
+
+        <activity
+            android:name=".Basic.Teacher.TeacherProfile"
+            android:exported="true" />
+
+        <activity
+            android:name=".Basic.Teacher.TeacherDashboard"
+            android:exported="true" />
+
+        <activity
+            android:name=".Basic.slidingmenu.StudentWorkUpload"
+            android:exported="true" />
+
+        <activity
+            android:name=".Basic.slidingmenu.WorkWithUs"
+            android:exported="true" />
+
+        <activity
+            android:name=".Basic.slidingmenu.ELibraryMenu"
+            android:exported="true" />
+
+        <activity
+            android:name=".Basic.LiveClass.LiveClassBatchDetails"
+            android:exported="true" />
+
+        <activity
+            android:name=".Basic.LiveClass.Das_Live_AyogList"
+            android:exported="true" />
+
+        <activity
+            android:name=".Basic.LiveClass.LiveClassCategoryDetails"
+            android:exported="true" />
+
+        <activity
+            android:name=".Basic.slidingmenu.MyWallet"
+            android:exported="true" />
+
+        <activity
+            android:name=".Basic.Bottomview.PlayVideo"
+            android:exported="true"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name=".Basic.slidingmenu.ChangePassword"
+            android:exported="true" />
+
+        <activity
+            android:name=".Basic.LiveClass.LiveClassDetails"
+            android:exported="true" />
+
+        <activity
+            android:name=".Basic.Bottomview.Das_Doubt"
+            android:exported="true" />
+
+        <activity
+            android:name=".Basic.Bottomview.Das_Testseries"
+            android:exported="true" />
+
+        <activity
+            android:name=".Basic.Bottomview.Das_LiveClass"
+            android:exported="true" />
+
+        <activity
+            android:name=".Basic.Bottomview.Dash_Fedd"
+            android:exported="true" />
+
+        <activity
+            android:name=".Basic.NotificationList"
+            android:exported="true" />
+
+        <activity
+            android:name=".Basic.slidingmenu.ReferShare"
+            android:exported="true" />
+
+        <activity
+            android:name=".Basic.slidingmenu.PrivacyPolicy"
+            android:exported="true" />
+
+        <activity
+            android:name=".Basic.slidingmenu.FAQ"
+            android:exported="true" />
+
+        <activity
+            android:name=".Basic.slidingmenu.Books"
+            android:exported="true" />
+
+        <activity
+            android:name=".Basic.slidingmenu.MyOrder"
+            android:exported="true" />
+
+        <activity
+            android:name=".Basic.slidingmenu.MyProfile"
+            android:exported="true" />
+
+        <activity
+            android:name=".Basic.OTPVerify"
+            android:exported="true" />
+
+        <activity
+            android:name=".Basic.DashboardActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".Basic.RegistartionActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".Basic.LoginActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".Basic.WelcomeSlider"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+
+        <activity
+            android:name=".Basic.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity
+            android:name="com.razorpay.CheckoutActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/CheckoutTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <data
+                    android:host="rzp.io"
+                    android:scheme="io.rzp" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/logo" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/purple_700" />
+
+        <service
+            android:name=".Basic.Firebase.PushNotification"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="com.razorpay.RzpTokenReceiver"
+            android:exported="true"
+            android:permission="android.permission.INTERNET">
+            <intent-filter>
+                <action android:name="rzp.device_token.share" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.akp.examcoach.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"
+                tools:node="merge" />
+        </provider>
+    </application>
+
+</manifest>

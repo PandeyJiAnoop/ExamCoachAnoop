@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: androidx.percentlayout:percentlayout:1.0.0@aar">
+    <CLASSES>
+      <root url="file://C:/Program Files/Java/jdk-18.0.2/bin/caches/transforms-3/5e31272f4839c8e765d506d2c17a21fb/transformed/percentlayout-1.0.0/AndroidManifest.xml" />
+      <root url="file://C:/Program Files/Java/jdk-18.0.2/bin/caches/transforms-3/5e31272f4839c8e765d506d2c17a21fb/transformed/percentlayout-1.0.0/res" />
+      <root url="jar://C:/Program Files/Java/jdk-18.0.2/bin/caches/transforms-3/5e31272f4839c8e765d506d2c17a21fb/transformed/percentlayout-1.0.0/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://C:/Program Files/Java/jdk-18.0.2/bin/caches/modules-2/files-2.1/androidx.percentlayout/percentlayout/1.0.0/a64aa3ff71c5a10e4b8c9a4222c08216f84ed5ee/percentlayout-1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:elevation="20dp"
+    app:cardCornerRadius="5dp"
+    android:layout_margin="1dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/rlLftRooms"
+                android:layout_width="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginRight="70dp"
+                    android:text="Mathmatices Class-1"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:id="@+id/name_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/date_tv"
+                    android:layout_alignParentRight="true"
+                    android:text="10-06-2022"
+                    android:textSize="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/rlLOcation"
+                android:layout_below="@+id/rlLftRooms"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/ivLocation"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/ic_dob" />
+                <TextView
+                    android:id="@+id/tv"
+                    android:layout_toRightOf="@+id/ivLocation"
+                    android:text="    Start Time 12:00 PM"
+                    android:textSize="12dp"
+                    android:textStyle="normal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/rlvNear"
+                android:layout_below="@+id/rlLOcation"
+                android:layout_width="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp">
+
+                <ImageView
+                    android:id="@+id/ivNear"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:background="@drawable/ic_dob" />
+
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_toRightOf="@+id/ivNear"
+                    android:text="     End Time 2:00 PM"
+                    android:textSize="12dp"
+                    android:textStyle="normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlCancelation"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/ivCheckPay"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/download"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp" />
+
+                <TextView
+                    android:layout_toRightOf="@+id/ivCheckPay"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="8dp"
+                    android:id="@+id/tvPay"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:text="Total 2 hours Class"
+                    android:textSize="12dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_height="wrap_content" />
+
+
+                <ImageView
+                    android:layout_below="@+id/tvPay"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/ivCheckCouple"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/ic_baseline_account_circle_24"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp" />
+
+                <TextView
+                    android:layout_below="@+id/tvPay"
+                    android:layout_toRightOf="@+id/ivCheckCouple"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="7dp"
+                    android:id="@+id/tvCheckCouple"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:text="Mode-Online"
+                    android:textSize="12dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center"
+                    android:textColor="#278E2B"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:padding="5dp"
+                    android:background="@drawable/rect_box"
+                    android:id="@+id/status"
+                    android:layout_width="wrap_content"
+                    android:text="Completed"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/start_time"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="50dp">
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:id="@+id/apply_rl"
+                        android:background="#4CAF50"
+                        android:orientation="horizontal"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="14dp"
+                            android:gravity="center_vertical"
+                            android:drawableTint="@color/white"
+                            android:drawableLeft="@drawable/ic_coin"
+                            android:text=" Click here to Start Timer"
+                            android:textStyle="bold"
+                            android:textAllCaps="true"
+                            android:textColor="@color/white"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"/>
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/end_time"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="50dp">
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="#F44336"
+                        android:orientation="horizontal"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="14dp"
+                            android:gravity="center_vertical"
+                            android:drawableTint="@color/white"
+                            android:drawableLeft="@drawable/ic_coin"
+                            android:text=" Click here to End Class"
+                            android:textStyle="bold"
+                            android:textAllCaps="true"
+                            android:textColor="@color/white"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"/>
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+</androidx.cardview.widget.CardView>

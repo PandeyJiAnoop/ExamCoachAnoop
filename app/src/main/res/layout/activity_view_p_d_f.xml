@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/top_rl"
+        android:layout_width="match_parent"
+        android:background="@color/colorAccent"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/back_img"
+            android:layout_width="50dp"
+            android:padding="15dp"
+            android:tint="@color/white"
+            android:src="@drawable/back"
+            android:layout_height="50dp">
+        </ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="PDF Viewer"
+            android:gravity="center_vertical"
+            android:textStyle="bold"
+            android:layout_marginLeft="50dp"
+            android:textSize="16dp"
+            android:textColor="@color/white"
+            android:layout_height="match_parent">
+        </TextView>
+    </RelativeLayout>
+    <TextView
+        android:layout_below="@+id/top_rl"
+        android:id="@+id/totle_tv"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:text="Scroll Horizontally For Read More..."
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:textColor="@color/red"
+        android:layout_height="wrap_content">
+    </TextView>
+
+    <!--PDF Viewer to display our PDF-->
+    <com.github.barteksc.pdfviewer.PDFView
+        android:layout_below="@+id/totle_tv"
+        android:id="@+id/idPDFView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

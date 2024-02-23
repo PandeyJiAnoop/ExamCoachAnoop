@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@android:drawable/ic_media_rew"
+            android:layout_width="30dp"
+            android:tint="@color/black"
+            android:layout_marginTop="5dp"
+            android:layout_height="30dp">
+        </ImageView>
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:text="ExamCoach Information Centre Pvt Ltd has always solemnly promised to protect the privacy of users who use ExamCoach’s products and service (collectively “User” or “you”). When you use ExamCoach Service, We may collect and use your personal data. The protection of your personal data is of great importance to ExamCoach within and outside the State of India as well as other jurisdictions. This privacy policy (the “Privacy Policy”) therefore intends to inform you about how ExamCoach, acting as data controller, collects and processes your personal data that you submit or disclose to us. We may also act as data processor when we process your personal data received or obtained through third-parties. We encourage you to read this Privacy Policy carefully. If you do not wish your personal data to be used by us as set out in this Privacy Policy, please do not Provide us with your personal data. Please note that in such a case, we may not be able to Provide you with our services, you may not have access to and/or be able to use some features of the Website and App, and your customer experience may be impacted."
+            android:textSize="14dp" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/content_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="10dp"
+        android:text="I. Personal Data that We may Collect
+When you use the ExamCoach services, we may collect and process information that may be directly or indirectly related to your personal identity. In both instances, such information may constitute personal data subject to this Policy.
+
+(I) Information not directly related to your personal identity: When you use ExamCoach Service, we may collect and process information such as the user’s source route, access sequence and so on, such as record the source route and browser software of each User who uses ExamCoach Service.
+
+Information related to your personal identity: When you use ExamCoach Service , we may collect and process or request you to Provide information related to personal identity, such as personal identification (including ID card, passport, and driver license); date of birth, place of birth, gender, hobbies, personal phone number, facial features; online identification information (including system account, IP address, email address, and password and answers to password protection of the foregoing); personal property information (including dealing records, balances, coupons, game exchange codes, and bank card information); communication information; personal online records and log information (including website browsing records, software usage records, click records, and operation logs); device information (including device model, device MAC address, operating system type and device settings); software list unique device identifier (such as IMEI/android ID/IDFA/OPENUDID/GUID, information describing basic information of personal devices including IMSI information of the SIM card); location information (including trip information, precise positioning information, accommodation information, and latitude and longitude). Please note that if you upload or post information in public areas that are visible to other users in ExamCoach Service and you disclose your personal information in response to information uploaded or posted by others, such information may be collected and used by others. When you find that ExamCoach users improperly collect or use information from you or others, please contact info@ExamCoach.com
+
+II. How will We Collect and Use the Information
+(I) We will collect and obtain your information through the following ways:
+
+1. Information Provided by you. For example:
+
+(1) information Provided by you when you register an account for ExamCoach Service or use ExamCoach Service;
+(2) sharing information Provided by you to other parties through ExamCoach Service, and information saved when you use ExamCoach Service.
+2. Your information shared by other parties. Also sharing information about you Provided by other parties when they use ExamCoach Service.
+
+3. Your information obtained by us. The information collected, summarized and recorded by us when you use ExamCoach Service, such as log information, location information and device information.
+
+(II) COOKIES, log archives and WEB BEACON
+
+We or our third party partners may obtain and use your information through COOKIES and WEB BEACON and save this information as log information. By using COOKIES, we Provide users with a simple and easy-to-use personalized web experience. A COOKIES is a small amount of data that is sent from a web server to your browser and stored on your computer's hard drive. We use COOKIES to allow its users to benefit. For example, to make the login process of the ExamCoach virtual community faster, you can choose to save the username in a COOKIES. This will make it easier and faster to login into ExamCoach Service next time. COOKIES can help us to determine the webpages and content you are connected to, time you spend on certain ExamCoach Service and the ExamCoach service you have chosen.
+
+COOKIES enables us to serve you better and faster, and to make your experience on ExamCoach Service more personal. However, you should be able to control whether and how COOKIES is accepted by your browser. Please check the documentation attached to your browser for more information on this. We or our third party partners may collect and use your information through COOKIES and WEB BEACON, and store such information.
+
+We use our own COOKIES and WEB BEACON for the following purposes:
+
+(1) Remember your identity. For example: COOKIES and WEB BEACON help us identify you as our registered user, or save your preferences or other information Provided by you to us.
+(2) Analyze your use of our services. We can use COOKIES and WEB BEACON to understand which activities you use ExamCoach Service, or which services or service is the most popular. We may request your consent prior to using COOKIES and WEB BEACONS for these purposes.
+(3) Advertising optimization. COOKIES and WEB BEACON help us to Provide you with advertisements related to you based on your information instead of general advertising, We may request your consent prior to using COOKIES and WEB BEACONS for these purposes."
+        android:textSize="14dp" />
+    <View
+        android:layout_width="wrap_content"
+        android:background="@color/colorAccent"
+        android:layout_height="0.1dp">
+    </View>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.dhinakaransdk:SimpleOTP:1.0@aar">
+    <CLASSES>
+      <root url="jar://C:/Program Files/Java/jdk-18.0.2/bin/caches/transforms-3/20035096a068fd1b82991f2bac42ad3c/transformed/jetified-SimpleOTP-1.0/jars/classes.jar!/" />
+      <root url="file://C:/Program Files/Java/jdk-18.0.2/bin/caches/transforms-3/20035096a068fd1b82991f2bac42ad3c/transformed/jetified-SimpleOTP-1.0/res" />
+      <root url="file://C:/Program Files/Java/jdk-18.0.2/bin/caches/transforms-3/20035096a068fd1b82991f2bac42ad3c/transformed/jetified-SimpleOTP-1.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://C:/Program Files/Java/jdk-18.0.2/bin/caches/modules-2/files-2.1/com.github.dhinakaransdk/SimpleOTP/1.0/c5aec107559c0f2abc5babf2675290e0cc101f47/SimpleOTP-1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

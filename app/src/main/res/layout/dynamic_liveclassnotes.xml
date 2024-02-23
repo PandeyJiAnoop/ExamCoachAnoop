@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="5dp"
+    android:layout_margin="1dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:layout_height="wrap_content">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="50dp"
+                android:tint="@color/white"
+                android:id="@+id/img"
+                android:layout_height="50dp"
+                android:src="@drawable/android">
+            </de.hdodenhof.circleimageview.CircleImageView>
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/paid_img"
+                android:layout_width="25dp"
+                android:src="@drawable/freeimg"
+                android:layout_height="25dp">
+            </ImageView>
+
+            <LinearLayout
+                android:layout_marginLeft="50dp"
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="40dp"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/title_tv"
+                    android:layout_width="wrap_content"
+                    android:text="Android development full pdf"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_height="match_parent">
+
+                </TextView>
+                <TextView
+                    android:id="@+id/des_tv"
+                    android:layout_width="wrap_content"
+                    android:text="Uploaded on 12/05/2022"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="14dp"
+                    android:layout_height="match_parent">
+
+                </TextView>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/download_rl"
+                android:layout_margin="5dp"
+                android:background="@drawable/circle"
+                android:layout_width="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_height="30dp">
+                <ImageView
+                    android:layout_centerInParent="true"
+                    android:layout_width="15dp"
+                    android:tint="@color/white"
+                    android:src="@drawable/download"
+                    android:layout_height="15dp">
+                </ImageView>
+            </RelativeLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>

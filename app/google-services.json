@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "391910130403",
+    "firebase_url": "https://examcoach-50d40-default-rtdb.firebaseio.com",
+    "project_id": "examcoach-50d40",
+    "storage_bucket": "examcoach-50d40.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:391910130403:android:66e29092b2c5dce287bbd6",
+        "android_client_info": {
+          "package_name": "com.akp.examcoach"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "391910130403-biooqggejohmiamj6p6af815amtb8032.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.akp.examcoach",
+            "certificate_hash": "4db9b4aba42d20c77aa1e57e61e8c02016246964"
+          }
+        },
+        {
+          "client_id": "391910130403-qdvi3uhicp55cfihuf4g8t0hvot8nnq3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-YIr9VeXBfx37RBvLRaUsILHggQdcuw4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "391910130403-qdvi3uhicp55cfihuf4g8t0hvot8nnq3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

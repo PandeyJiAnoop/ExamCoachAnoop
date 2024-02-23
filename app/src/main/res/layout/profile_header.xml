@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:elevation="10dp"
+    app:cardCornerRadius="5dp"
+    android:layout_height="180dp">
+    <LinearLayout
+        android:id="@+id/profile"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@color/colorAccent"
+        android:orientation="vertical">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_profile_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/user"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="2dp" />
+        <TextView
+            android:id="@+id/txt_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome,Anoop"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:textSize="14dp" />
+        <TextView
+            android:id="@+id/txt_usergmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:text="User Email"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:layout_marginBottom="10dp" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+
+
+
+</merge>

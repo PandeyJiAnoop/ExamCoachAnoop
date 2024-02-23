@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.android.gms:play-services-auth-api-phone:17.1.0@aar">
+    <CLASSES>
+      <root url="jar://C:/Program Files/Java/jdk-18.0.2/bin/caches/transforms-3/098cf4c48f0f11febe91fb8530cd1b89/transformed/jetified-play-services-auth-api-phone-17.1.0/jars/classes.jar!/" />
+      <root url="file://C:/Program Files/Java/jdk-18.0.2/bin/caches/transforms-3/098cf4c48f0f11febe91fb8530cd1b89/transformed/jetified-play-services-auth-api-phone-17.1.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://C:/Program Files/Java/jdk-18.0.2/bin/caches/modules-2/files-2.1/com.google.android.gms/play-services-auth-api-phone/17.1.0/f7687a81343a48ab0fe37a68e596e95054600b9d/play-services-auth-api-phone-17.1.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>
